@@ -1,0 +1,65 @@
+﻿@using System.Globalization;
+@model Assigment02_BussinessObject.Book
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+@{
+    ViewData["Title"] = "Book Details";
+}
+
+<h1>Book Details</h1>
+
+@if (ViewBag.ErrMsg != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrMsg
+    </div>
+}
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Book Information</h4>
+                <hr />
+                <dl class="row">
+                    <dt class="col-sm-4">Book Name:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.bookname)</dd>
+
+                    <dt class="col-sm-4">Title:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.title)</dd>
+
+                    <dt class="col-sm-4">Type:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.type)</dd>
+                    
+                    <dt class="col-sm-4">Price:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.price)</dd>
+                    
+                    <dt class="col-sm-4">Advance:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.advance)</dd>
+                    
+                    <dt class="col-sm-4">Royalty:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.royalty)</dd>
+                    
+                    <dt class="col-sm-4">YtdSales:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.ytd_sales)</dd>
+                    
+                    <dt class="col-sm-4">Notes:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.notes)</dd>
+
+                    <dt class="col-sm-4">PublishedDate:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.published_date)</dd>
+
+                    
+
+                    <dt class="col-sm-4">Publisher:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Publisher.publisher_name)</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model?.pub_id" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+

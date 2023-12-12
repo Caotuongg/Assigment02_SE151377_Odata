@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\bin\Debug\net6.0\Assigment02_BussinessObject.deps.json
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\bin\Debug\net6.0\Assigment02_BussinessObject.runtimeconfig.json
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\bin\Debug\net6.0\Assigment02_BussinessObject.dll
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\bin\Debug\net6.0\Assigment02_BussinessObject.pdb
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\Assigment02_BussinessObject.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\Assigment02_BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\Assigment02_BussinessObject.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\Assigment02_BussinessObject.AssemblyInfo.cs
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\Assigment02_BussinessObject.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\Assigment02_BussinessObject.dll
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\refint\Assigment02_BussinessObject.dll
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\Assigment02_BussinessObject.pdb
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\Assigment02_BussinessObject.genruntimeconfig.cache
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_BussinessObject\obj\Debug\net6.0\ref\Assigment02_BussinessObject.dll

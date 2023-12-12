@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Assigment02_BussinessObject.Author>
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+@{
+    ViewData["Title"] = "Authors";
+}
+<div class="container">
+    <h1 class="text-center">Author List</h1>
+
+    @if (ViewBag.ErrMsg != null)
+    {
+        <div class="alert alert-danger">@ViewBag.ErrMsg</div>
+    }
+    @*@if (ViewBag.Role == "Admin")
+    {*@
+        <p class="text-right">
+            <a asp-action="Create" class="btn btn-primary">Create New Author</a>
+        </p>
+   @* }*@
+    <hr />
+
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>AuthorID</th>
+                <th>LastName</th>
+                <th>FirstName</th>
+                <th>EmaiAddress</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.author_id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.last_name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.first_name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.email_address)</td>
+                    <td>@Html.DisplayFor(modelItem => item.phone)</td>
+                    <td>@Html.DisplayFor(modelItem => item.address)</td>
+                    <td>@Html.DisplayFor(modelItem => item.city)</td>
+                    <td>@Html.DisplayFor(modelItem => item.state)</td>
+                    <td>@Html.DisplayFor(modelItem => item.zip)</td>
+                    
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.author_id" class="btn btn-primary btn-sm">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.author_id" class="btn btn-primary btn-sm">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.author_id" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

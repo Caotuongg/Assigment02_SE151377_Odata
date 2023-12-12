@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Assigment02_BussinessObject.User>
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+@{
+    ViewData["Tilte"] = "Index";
+}
+<h1>Index</h1>
+
+<div class="container">
+    <h1 class="text-center">User List</h1>
+
+    @if (ViewBag.ErrMsg != null)
+    {
+        <div class="alert alert-danger">@ViewBag.ErrMsg</div>
+    }
+
+    <hr />
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.user_id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.email_address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.source)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.first_name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.middle_name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.last_name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.hire_date)
+                </th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.user_id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email_address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.source)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.first_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.middle_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.last_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.hire_date)
+                    </td>
+                    <td>
+
+                        @*<a asp-action="Edit" asp-route-id="@item.user_id">Edit</a>*@
+                        <a asp-action="Details" asp-route-id="@item.user_id">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.user_id">Delete</a>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+
+    </table>

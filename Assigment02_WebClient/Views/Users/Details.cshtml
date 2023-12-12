@@ -1,0 +1,71 @@
+﻿@model Assigment02_BussinessObject.User
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+<div class="container">
+    <h1 class="text-center">User Details</h1>
+
+    @if (ViewBag.ErrMsg != null)
+    {
+        <div class="alert alert-danger">@ViewBag.ErrMsg</div>
+    }
+    <form asp-action="Edit" method="post" class="needs-validation" novalidate>
+        <input type="hidden" asp-for="user_id" required readonly />
+        <input type="hidden" asp-for="password" required readonly />
+        <div>
+            <h4>User Information</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-2">
+                    <label>Email</label>
+                </div>
+                <div class="col-md-10">
+                    <input asp-for="email_address" class="form-control" readonly required />
+                </div>
+                <div class="col-md-2">
+                    <label>Source</label>
+                </div>
+                <div class="col-md-10">
+                    <input asp-for="source" class="form-control" required />
+                </div>
+                <div class="col-md-2">
+                    <label>FirstName</label>
+                </div>
+                <div class="col-md-10">
+                    <input asp-for="first_name" class="form-control" required />
+                </div>
+                <div class="col-md-2">
+                    <label>MiddleName</label>
+                </div>
+                <div class="col-md-10">
+                    <input asp-for="middle_name" class="form-control" required />
+                </div>
+                <div class="col-md-2">
+                    <label>LastName</label>
+                </div>
+                <div class="col-md-10">
+                    <input asp-for="last_name" class="form-control" required />
+                </div>
+                <div class="col-md-2">
+                    <label>HireDate</label>
+                </div>
+                <div class="col-md-10">
+                    <input asp-for="hire_date" class="form-control" required />
+                </div>
+                <div class="col-md-2">
+                    <label>Password</label>
+                </div>
+                <div class="col-md-10">
+                    <input asp-for="password" class="form-control" required />
+                </div>
+               
+            </div>
+        </div>
+        @if (ViewBag.Role != null && ViewBag.Role != "Admin")
+        {
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        }
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </form>
+</div>

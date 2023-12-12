@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\bin\Debug\net6.0\Assigment02_Service.deps.json
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\bin\Debug\net6.0\Assigment02_Service.dll
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\bin\Debug\net6.0\Assigment02_Service.pdb
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\bin\Debug\net6.0\Assigment02_BussinessObject.dll
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\bin\Debug\net6.0\Assigment02_Repositories.dll
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\bin\Debug\net6.0\Assigment02_Repositories.pdb
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\bin\Debug\net6.0\Assigment02_BussinessObject.pdb
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\Assigment02_Service.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\Assigment02_Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\Assigment02_Service.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\Assigment02_Service.AssemblyInfo.cs
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\Assigment02_Service.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\Assigment02_Service.csproj.CopyComplete
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\Assigment02_Service.dll
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\refint\Assigment02_Service.dll
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\Assigment02_Service.pdb
+C:\Users\HP\Desktop\Kỳ 8\PRN231\Assigment02_SE151377_Odata\Assigment02_Service\obj\Debug\net6.0\ref\Assigment02_Service.dll

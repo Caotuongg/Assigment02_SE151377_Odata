@@ -1,0 +1,91 @@
+﻿@model Assigment02_BussinessObject.Book
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+@{
+    ViewData["Title"] = "Edit Book";
+}
+
+<h1>Edit Book</h1>
+
+@if (ViewBag.ErrMsg != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrMsg
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="book_id" />
+
+            <div class="form-group">
+                <label for="PublisherId">Publisher</label>
+                <select asp-for="pub_id" class="form-control" asp-items="ViewBag.PublisherId"></select>
+                <span asp-validation-for="pub_id" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="BookName">BookName</label>
+                <input asp-for="bookname" class="form-control" />
+                <span asp-validation-for="bookname" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Type">Type</label>
+                <input asp-for="title" class="form-control" />
+                <span asp-validation-for="title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Type">Type</label>
+                <input asp-for="type" class="form-control" />
+                <span asp-validation-for="type" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Price">Price</label>
+                <input asp-for="price" class="form-control" />
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Advance">Advance</label>
+                <input asp-for="advance" class="form-control" />
+                <span asp-validation-for="advance" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Royalty">Royalty</label>
+                <input asp-for="royalty" class="form-control" />
+                <span asp-validation-for="royalty" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="YtdSales">YtdSales</label>
+                <input asp-for="ytd_sales" class="form-control" />
+                <span asp-validation-for="ytd_sales" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Notes">Notes</label>
+                <input asp-for="notes" class="form-control" />
+                <span asp-validation-for="notes" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="PublishedDate">PublishedDate</label>
+                <input asp-for="published_date" class="form-control" />
+                <span asp-validation-for="published_date" class="text-danger"></span>
+            </div>
+
+           
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>

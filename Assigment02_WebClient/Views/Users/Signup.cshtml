@@ -1,0 +1,89 @@
+﻿@model Assigment02_BussinessObject.User
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+@{
+    ViewData["Title"] = "Signup";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 class="text-center">Signup</h1>
+
+            @if (ViewBag.ErrMsg != null)
+            {
+                <div class="alert alert-danger">@ViewBag.ErrMsg</div>
+            }
+
+            <hr />
+
+            <form asp-action="Signup" class="needs-validation" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="email_address" class="control-label">Email</label>
+                    <input asp-for="email_address" class="form-control" required />
+                    <span asp-validation-for="email_address" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="password" class="control-label">Password</label>
+                    <input asp-for="password" class="form-control" required />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="source" class="control-label">Source</label>
+                    <input asp-for="source" class="form-control" required />
+                    <span asp-validation-for="source" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="first_name" class="control-label">FirstName</label>
+                    <input asp-for="first_name" class="form-control" required />
+                    <span asp-validation-for="first_name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="middle_name" class="control-label">MiddleName</label>
+                    <input asp-for="middle_name" class="form-control" required />
+                    <span asp-validation-for="middle_name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="last_name" class="control-label">LastName</label>
+                    <input asp-for="last_name" class="form-control" required />
+                    <span asp-validation-for="last_name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="hire_date" class="control-label">HireDate</label>
+                    <input asp-for="hire_date" class="form-control" required />
+                    <span asp-validation-for="hire_date" class="text-danger"></span>
+                </div>
+
+                
+                <div class="form-group">
+                    <label asp-for="role_id" class="control-label">RoleID</label>
+                    <input asp-for="role_id" class="form-control" required />
+                    <span asp-validation-for="role_id" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="pub_id" class="control-label">PubID</label>
+                    <input asp-for="pub_id" class="form-control"  required />
+                    <span asp-validation-for="pub_id" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Signup</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,46 @@
+﻿@model Assigment02_BussinessObject.Publisher
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+@{
+    ViewData["Title"] = "Publisher Details";
+}
+
+<h1>Publisher Details</h1>
+
+@if (ViewBag.ErrMsg != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrMsg
+    </div>
+}
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Publisher Information</h4>
+                <hr />
+                <dl class="row">
+                    <dt class="col-sm-4">PublisherName:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.publisher_name)</dd>
+
+                    <dt class="col-sm-4">City:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.city)</dd>
+
+                    <dt class="col-sm-4">State:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.state)</dd>
+
+                    <dt class="col-sm-4">Country:</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.country)</dd>
+
+                    
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model?.pub_id" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
